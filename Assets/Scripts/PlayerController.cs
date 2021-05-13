@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         {
             winloseText.text = $"Game Over!";
             winloseText.color = Color.black;
-            winloseBox.color = Color.green;
+            winloseBox.color = Color.red;
             winloseBG.SetActive(true);
             if (loadcatch == false)
                 StartCoroutine(LoadScene(3));
@@ -81,8 +81,8 @@ public class PlayerController : MonoBehaviour
         {
             ///Debug.Log($"You win!");
             winloseText.text = $"You Win!";
-            winloseText.color = new Color(0, 00, 0, 255);
-            winloseBox.color = new Color(0, 255, 0, 255);
+            winloseText.color = Color.black;
+            winloseBox.color = Color.green;
             winloseBG.SetActive(true);
             if (loadcatch == false)
                 StartCoroutine(LoadScene(3));
